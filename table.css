@@ -1,7 +1,31 @@
 .table {
-    
+    border-collapse: collapse;
+    width: 100%;
+}
+.table> tbody > tr:nth-of-type(even) {
+  background-color: #e8e8e8;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    text-align: left;
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #797878;
 }
 
-.table-striped {
-    
-}
+
+/*
+@media screen and (max-width: 320px) {
+  .table {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #ddd;
+  }
+}*/
